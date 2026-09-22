@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>teacola — Portfolio &amp; Works</title>
+  <meta name="description" content="teacolaの個人開発ポートフォリオ。Chrome拡張機能「tabCandle」や言葉の組み合わせ生成ツール「wordformation」などの制作物を紹介しています。">
+  <link rel="canonical" href="https://teacola.github.io/">
+
+  <!-- Open Graph / OGP -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://teacola.github.io/">
+  <meta property="og:title" content="teacola — Portfolio &amp; Works">
+  <meta property="og:description" content="Chrome拡張機能「tabCandle」や言葉の組み合わせツール「wordformation」など、シンプルで心地よいWebプロダクトを公開しています。">
+  <meta property="og:image" content="https://lh3.googleusercontent.com/ddZbvEW6qTCyNjsCUHAT4bnFtStGGTjkdAZwTMZyflLlJb7li3_28E7Ahgon19_w2FMtFNF7FHLyhBseScRXp3do6g=s128-rj-sc0x00ffffff">
+  <meta name="twitter:card" content="summary">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Noto+Sans+JP:wght@400;500;700&family=Outfit:wght@400;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Ambient background elements -->
+  <div class="ambient-bg" aria-hidden="true">
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+    <div class="blob blob-3"></div>
+  </div>
+
+  <div class="container">
+    <!-- Top Navigation Bar -->
+    <header class="top-nav">
+      <a href="./" class="nav-brand" aria-label="teacola ホーム">
+        <div class="brand-symbol">t</div>
+        <span>teacola</span>
+      </a>
+
+      <div class="nav-actions">
+        <a href="https://github.com/teacola" class="nav-link-btn" target="_blank" rel="noopener noreferrer" aria-label="GitHubプロフィール">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/>
+          </svg>
+          <span>GitHub</span>
+        </a>
+
+        <button id="theme-toggle" class="theme-toggle-btn" aria-label="テーマの切り替え (ダーク/ライト)">
+          <!-- Moon Icon (Dark Mode active) -->
+          <svg class="moon-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+          <!-- Sun Icon (Light Mode active) -->
+          <svg class="sun-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+        </button>
+      </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+      <!-- Hero Section -->
+      <section class="hero-section">
+        <div class="hero-pill">
+          <span class="dot"></span>
+          Personal Works &amp; Lab
+        </div>
+        <h1 class="hero-title">
+          Crafting tools with <br>
+          <span class="gradient-text">focus &amp; curiosity.</span>
+        </h1>
+        <p class="hero-desc">
+          日常のブラウジングを心地よくする拡張機能や、新しいアイデアの種を紡ぎ出すWebツールなど、シンプルで実用的なプロダクトを開発しています。
+        </p>
+      </section>
+
+      <!-- Works Section Header -->
+      <div class="section-header">
+        <h2 class="section-title">
+          Selected Projects
+        </h2>
+        <span class="section-count">2 Projects</span>
+      </div>
+
+      <!-- Projects Grid -->
+      <section class="works-grid" aria-label="公開プロジェクト一覧">
+        
+        <!-- Project 1: tabCandle -->
+        <article class="work-card card-candle" id="project-tabcandle">
+          <div class="card-top">
+            <div class="card-icon-wrap">
+              <img 
+                src="https://lh3.googleusercontent.com/ddZbvEW6qTCyNjsCUHAT4bnFtStGGTjkdAZwTMZyflLlJb7li3_28E7Ahgon19_w2FMtFNF7FHLyhBseScRXp3do6g=s128-rj-sc0x00ffffff" 
+                alt="tabCandle アイコン" 
+                class="card-icon-img"
+                loading="lazy"
+              />
+            </div>
+            <div class="card-badge-group">
+              <span class="badge-tag badge-extension">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M20.5 11H19V7c0-1.1-.9-2-2-2h-4V3.5a2.5 2.5 0 0 0-5 0V5H4c-1.1 0-1.99.9-1.99 2v3.8H3.5c1.49 0 2.7 1.21 2.7 2.7s-1.21 2.7-2.7 2.7H2V20c0 1.1.9 2 2 2h3.8v-1.5c0-1.49 1.21-2.7 2.7-2.7s2.7 1.21 2.7 2.7V22H17c1.1 0 2-.9 2-2v-4h1.5a2.5 2.5 0 0 0 0-5z"/>
+                </svg>
+                Chrome Extension
+              </span>
+              <span class="badge-users">Chrome Web Store 公開中</span>
+            </div>
+          </div>
+
+          <div class="card-content">
+            <h3 class="card-title">tabCandle</h3>
+            <p class="card-subtext">4時間で静かに消える、ブラウザタブのロウソク</p>
+            <p class="card-desc">
+              固定タブ以外の開きっぱなしタブを、240分（4時間）経過後に自動クローズ。溜まりがちなタブを整理し、ブラウザのメモリ消費を軽やかに抑えます。
+            </p>
+
+            <ul class="feature-list">
+              <li class="feature-item">
+                <span class="feature-icon">🕯️</span>
+                <span>4時間経過でバックグラウンドタブを自動クローズ</span>
+              </li>
+              <li class="feature-item">
+                <span class="feature-icon">📌</span>
+                <span>固定（ピン留め）タブは自動消滅から確実に保護</span>
+              </li>
+              <li class="feature-item">
+                <span class="feature-icon">⚡</span>
+                <span>不要なメモリ解放でPCの快適性をキープ</span>
+              </li>
+            </ul>
+
+            <!-- Interactive Widget / Preview snippet -->
+            <div class="card-preview-box">
+              <div class="candle-widget">
+                <div class="candle-timer-bar">
+                  <span class="flame-anim">🔥</span>
+                  <span>自動クローズまで</span>
+                  <span class="timer-pill">240 min</span>
+                </div>
+                <span class="pinned-note">📌 留めたタブは保護</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="card-footer">
+            <a 
+              href="https://chromewebstore.google.com/detail/tabcandle/eghieefcaocdlamkpefmemmbepdgkdac" 
+              class="cta-button cta-candle" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              aria-label="tabCandle を Chrome ウェブストアで確認"
+            >
+              <span>Chrome ウェブストアで見る</span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="7" y1="17" x2="17" y2="7"></line>
+                <polyline points="7 7 17 7 17 17"></polyline>
+              </svg>
+            </a>
+          </div>
+        </article>
+
+        <!-- Project 2: wordformation -->
+        <article class="work-card card-wordformation" id="project-wordformation">
+          <div class="card-top">
+            <div class="card-icon-wrap">
+              <div class="custom-card-icon">
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="3" y="3" width="7" height="7"></rect>
+                  <rect x="14" y="3" width="7" height="7"></rect>
+                  <rect x="14" y="14" width="7" height="7"></rect>
+                  <rect x="3" y="14" width="7" height="7"></rect>
+                </svg>
+              </div>
+            </div>
+            <div class="card-badge-group">
+              <span class="badge-tag badge-webapp">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <line x1="2" y1="12" x2="22" y2="12"></line>
+                  <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+                </svg>
+                Web App
+              </span>
+              <span class="badge-users">GitHub Pages 公開中</span>
+            </div>
+          </div>
+
+          <div class="card-content">
+            <h3 class="card-title">wordformation</h3>
+            <p class="card-subtext">登録した言葉たちから、新しい造語を紡ぎ出す</p>
+            <p class="card-desc">
+              思いついた単語を登録すると、ランダムに2つの言葉が組み合わさって新しい造語が誕生。ネーミングや創作、企画のアイデア出しにひらめきを与えるサービスです。
+            </p>
+
+            <ul class="feature-list">
+              <li class="feature-item">
+                <span class="feature-icon">🎲</span>
+                <span>2つのスロット（A + B）で言葉をランダムにブレンド</span>
+              </li>
+              <li class="feature-item">
+                <span class="feature-icon">📋</span>
+                <span>気になった造語はワンクリックで即座にクリップボードへ</span>
+              </li>
+              <li class="feature-item">
+                <span class="feature-icon">🏷️</span>
+                <span>登録した言葉を俯瞰できるインタラクティブなタグクラウド</span>
+              </li>
+            </ul>
+
+            <!-- Interactive Widget / Live Synthesis Preview -->
+            <div class="card-preview-box" id="formation-widget">
+              <div class="formation-widget">
+                <span class="slot-token" id="slot-a-val">word</span>
+                <span class="slot-plus">+</span>
+                <span class="slot-token" id="slot-b-val">formation</span>
+                <span class="slot-arrow">→</span>
+                <span class="slot-result" id="slot-res-val">wordformation</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="card-footer">
+            <a 
+              href="https://teacola.github.io/wordformation/" 
+              class="cta-button cta-wordformation" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              aria-label="wordformation Webアプリを開く"
+            >
+              <span>Webアプリを開く</span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="7" y1="17" x2="17" y2="7"></line>
+                <polyline points="7 7 17 7 17 17"></polyline>
+              </svg>
+            </a>
+          </div>
+        </article>
+
+      </section>
+
+      <!-- Profile & Note Section -->
+      <section class="about-section">
+        <div class="about-text">
+          <h3>About teacola</h3>
+          <p>
+            使い勝手がよく、シンプルで余白のあるモノづくりを心がけています。<br>
+            日常のちょっとした不便の解消や、創作のインスピレーションになるWebプロダクトを開発しています。
+          </p>
+        </div>
+        <div class="about-links">
+          <a href="https://github.com/teacola" class="nav-link-btn" target="_blank" rel="noopener noreferrer">
+            <span>GitHub Profile</span>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <line x1="7" y1="17" x2="17" y2="7"></line>
+              <polyline points="7 7 17 7 17 17"></polyline>
+            </svg>
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="footer-copy">
+        &copy; 2026 teacola. All rights reserved.
+      </div>
+      <div class="footer-nav">
+        <a href="https://chromewebstore.google.com/detail/tabcandle/eghieefcaocdlamkpefmemmbepdgkdac" target="_blank" rel="noopener noreferrer">tabCandle</a>
+        <a href="https://teacola.github.io/wordformation/" target="_blank" rel="noopener noreferrer">wordformation</a>
+        <a href="https://github.com/teacola" target="_blank" rel="noopener noreferrer">GitHub</a>
+      </div>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
