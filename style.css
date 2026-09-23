@@ -158,20 +158,12 @@ body {
 [data-theme="light"] .moon-icon { display: none; }
 
 /* ==========================================================================
-   Hero / Intro
+   Intro
    ========================================================================== */
 .hero {
-  padding: 24px 0 40px;
+  padding: 8px 0 28px;
   border-bottom: 1px solid var(--border-color);
-  margin-bottom: 36px;
-}
-
-.hero-title {
-  font-size: 1.5rem;
-  font-weight: 600;
-  letter-spacing: -0.02em;
-  margin-bottom: 8px;
-  color: var(--text-primary);
+  margin-bottom: 32px;
 }
 
 .hero-desc {

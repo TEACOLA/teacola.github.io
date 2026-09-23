@@ -35,7 +35,6 @@ const translations = {
   en: {
     pageTitle: "teacola",
     pageDesc: "A small collection of personal projects and web experiments by teacola.",
-    heroTitle: "teacola",
     heroDesc: "A small collection of personal projects and web experiments.",
     projectsHeading: "Projects",
     tabcandleType: "Chrome Extension",
@@ -53,7 +52,6 @@ const translations = {
   ja: {
     pageTitle: "teacola",
     pageDesc: "teacola が個人で開発したツールやWebの実験作を置いているポートフォリオです。",
-    heroTitle: "teacola",
     heroDesc: "個人で作ったツールやWebの実験作を置いている場所です。",
     projectsHeading: "Projects",
     tabcandleType: "Chrome Extension",
