@@ -1,19 +1,38 @@
 <!DOCTYPE html>
-<html lang="ja">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>teacola — Portfolio &amp; Works</title>
-  <meta name="description" content="teacolaの個人開発ポートフォリオ。Chrome拡張機能「tabCandle」や言葉の組み合わせ生成ツール「wordformation」などの制作物を紹介しています。">
+  <title>teacola — Minimal Tools &amp; Creative Web Experiments</title>
+  <meta name="description" content="Minimal browser extensions and creative web experiments by teacola. Featuring tabCandle (gentle 4-hour auto-tab closer) and wordformation (serendipitous naming tool).">
+  <meta name="keywords" content="tabCandle, wordformation, Chrome extension, tab manager, close unused tabs, memory saver, naming tool, word combiner, indie maker, portfolio">
+  <meta name="author" content="teacola">
   <link rel="canonical" href="https://teacola.github.io/">
 
   <!-- Open Graph / OGP -->
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://teacola.github.io/">
-  <meta property="og:title" content="teacola — Portfolio &amp; Works">
-  <meta property="og:description" content="Chrome拡張機能「tabCandle」や言葉の組み合わせツール「wordformation」など、シンプルで心地よいWebプロダクトを公開しています。">
+  <meta property="og:title" content="teacola — Minimal Tools &amp; Creative Web Experiments">
+  <meta property="og:description" content="Lightweight browser extensions and playful web experiments built to reclaim focus and spark creative curiosity.">
   <meta property="og:image" content="https://lh3.googleusercontent.com/ddZbvEW6qTCyNjsCUHAT4bnFtStGGTjkdAZwTMZyflLlJb7li3_28E7Ahgon19_w2FMtFNF7FHLyhBseScRXp3do6g=s128-rj-sc0x00ffffff">
   <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="teacola — Minimal Tools &amp; Creative Web Experiments">
+  <meta name="twitter:description" content="Featuring tabCandle (auto-close idle tabs) and wordformation (naming & word blend generator).">
+  <meta name="twitter:image" content="https://lh3.googleusercontent.com/ddZbvEW6qTCyNjsCUHAT4bnFtStGGTjkdAZwTMZyflLlJb7li3_28E7Ahgon19_w2FMtFNF7FHLyhBseScRXp3do6g=s128-rj-sc0x00ffffff">
+
+  <!-- Schema.org Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "teacola",
+    "url": "https://teacola.github.io/",
+    "sameAs": [
+      "https://github.com/teacola"
+    ],
+    "knowsAbout": ["Web Development", "Chrome Extensions", "Creative Tools"]
+  }
+  </script>
 
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -36,20 +55,26 @@
   <div class="container">
     <!-- Top Navigation Bar -->
     <header class="top-nav">
-      <a href="./" class="nav-brand" aria-label="teacola ホーム">
+      <a href="./" class="nav-brand" aria-label="teacola home">
         <div class="brand-symbol">t</div>
         <span>teacola</span>
       </a>
 
       <div class="nav-actions">
-        <a href="https://github.com/teacola" class="nav-link-btn" target="_blank" rel="noopener noreferrer" aria-label="GitHubプロフィール">
+        <!-- Language Switcher (EN / JA) -->
+        <div class="lang-switcher" role="group" aria-label="Language switcher">
+          <button type="button" class="lang-btn active" data-lang="en" aria-label="Switch to English">EN</button>
+          <button type="button" class="lang-btn" data-lang="ja" aria-label="日本語に切り替え">JA</button>
+        </div>
+
+        <a href="https://github.com/teacola" class="nav-link-btn" target="_blank" rel="noopener noreferrer" aria-label="GitHub Profile">
           <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
             <path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/>
           </svg>
           <span>GitHub</span>
         </a>
 
-        <button id="theme-toggle" class="theme-toggle-btn" aria-label="テーマの切り替え (ダーク/ライト)">
+        <button id="theme-toggle" class="theme-toggle-btn" aria-label="Toggle theme (Dark / Light)">
           <!-- Moon Icon (Dark Mode active) -->
           <svg class="moon-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
             <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
@@ -76,27 +101,27 @@
       <section class="hero-section">
         <div class="hero-pill">
           <span class="dot"></span>
-          Personal Works &amp; Lab
+          <span data-i18n="heroPill">Indie Maker &amp; Experimental Lab</span>
         </div>
-        <h1 class="hero-title">
-          Crafting tools with <br>
-          <span class="gradient-text">focus &amp; curiosity.</span>
+        <h1 class="hero-title" data-i18n="heroTitle">
+          Crafting focused tools for a <br>
+          <span class="gradient-text">lighter, calmer web.</span>
         </h1>
-        <p class="hero-desc">
-          日常のブラウジングを心地よくする拡張機能や、新しいアイデアの種を紡ぎ出すWebツールなど、シンプルで実用的なプロダクトを開発しています。
+        <p class="hero-desc" data-i18n="heroDesc">
+          Lightweight browser extensions and playful web experiments built to reclaim focus, save memory, and spark creative curiosity.
         </p>
       </section>
 
       <!-- Works Section Header -->
       <div class="section-header">
-        <h2 class="section-title">
+        <h2 class="section-title" data-i18n="projectsHeading">
           Selected Projects
         </h2>
-        <span class="section-count">2 Projects</span>
+        <span class="section-count" data-i18n="projectsCount">2 Projects</span>
       </div>
 
       <!-- Projects Grid -->
-      <section class="works-grid" aria-label="公開プロジェクト一覧">
+      <section class="works-grid" aria-label="Projects List">
         
         <!-- Project 1: tabCandle -->
         <article class="work-card card-candle" id="project-tabcandle">
@@ -104,7 +129,7 @@
             <div class="card-icon-wrap">
               <img 
                 src="https://lh3.googleusercontent.com/ddZbvEW6qTCyNjsCUHAT4bnFtStGGTjkdAZwTMZyflLlJb7li3_28E7Ahgon19_w2FMtFNF7FHLyhBseScRXp3do6g=s128-rj-sc0x00ffffff" 
-                alt="tabCandle アイコン" 
+                alt="tabCandle icon" 
                 class="card-icon-img"
                 loading="lazy"
               />
@@ -114,31 +139,38 @@
                 <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor">
                   <path d="M20.5 11H19V7c0-1.1-.9-2-2-2h-4V3.5a2.5 2.5 0 0 0-5 0V5H4c-1.1 0-1.99.9-1.99 2v3.8H3.5c1.49 0 2.7 1.21 2.7 2.7s-1.21 2.7-2.7 2.7H2V20c0 1.1.9 2 2 2h3.8v-1.5c0-1.49 1.21-2.7 2.7-2.7s2.7 1.21 2.7 2.7V22H17c1.1 0 2-.9 2-2v-4h1.5a2.5 2.5 0 0 0 0-5z"/>
                 </svg>
-                Chrome Extension
+                <span data-i18n="tabcandleType">Chrome Extension</span>
               </span>
-              <span class="badge-users">Chrome Web Store 公開中</span>
+              <span class="badge-users" data-i18n="tabcandleStatus">Free on Web Store</span>
             </div>
           </div>
 
           <div class="card-content">
             <h3 class="card-title">tabCandle</h3>
-            <p class="card-subtext">4時間で静かに消える、ブラウザタブのロウソク</p>
-            <p class="card-desc">
-              固定タブ以外の開きっぱなしタブを、240分（4時間）経過後に自動クローズ。溜まりがちなタブを整理し、ブラウザのメモリ消費を軽やかに抑えます。
+            <p class="card-subtext" data-i18n="tabcandleSubtext">A digital candle that gently melts away idle browser tabs</p>
+            <p class="card-desc" data-i18n="tabcandleDesc">
+              Unpinned tabs automatically close after 240 minutes (4 hours) of inactivity. Like a candle burning down, tabCandle quietly reclaims bloated system RAM while keeping your workspace clean. Pinned tabs remain safely protected.
             </p>
+
+            <!-- Trust Pills -->
+            <div class="trust-pills">
+              <span class="trust-pill trust-pill-highlight" data-i18n="tabcandlePill1">🔒 Zero Tracking</span>
+              <span class="trust-pill" data-i18n="tabcandlePill2">⚡ Manifest V3</span>
+              <span class="trust-pill" data-i18n="tabcandlePill3">📦 100% Free</span>
+            </div>
 
             <ul class="feature-list">
               <li class="feature-item">
                 <span class="feature-icon">🕯️</span>
-                <span>4時間経過でバックグラウンドタブを自動クローズ</span>
+                <span data-i18n="tabcandleFeat1">Gentle 4-hour timer closes idle background tabs</span>
               </li>
               <li class="feature-item">
                 <span class="feature-icon">📌</span>
-                <span>固定（ピン留め）タブは自動消滅から確実に保護</span>
+                <span data-i18n="tabcandleFeat2">Pinned tabs are strictly protected &amp; never closed</span>
               </li>
               <li class="feature-item">
                 <span class="feature-icon">⚡</span>
-                <span>不要なメモリ解放でPCの快適性をキープ</span>
+                <span data-i18n="tabcandleFeat3">Restores system memory &amp; stops tab hoarding</span>
               </li>
             </ul>
 
@@ -147,10 +179,10 @@
               <div class="candle-widget">
                 <div class="candle-timer-bar">
                   <span class="flame-anim">🔥</span>
-                  <span>自動クローズまで</span>
+                  <span data-i18n="tabcandleWidgetLabel">Auto-close timer</span>
                   <span class="timer-pill">240 min</span>
                 </div>
-                <span class="pinned-note">📌 留めたタブは保護</span>
+                <span class="pinned-note" data-i18n="tabcandleWidgetNote">📌 Pinned tabs protected</span>
               </div>
             </div>
           </div>
@@ -161,9 +193,13 @@
               class="cta-button cta-candle" 
               target="_blank" 
               rel="noopener noreferrer"
-              aria-label="tabCandle を Chrome ウェブストアで確認"
+              aria-label="Add tabCandle to Chrome from Web Store"
             >
-              <span>Chrome ウェブストアで見る</span>
+              <!-- Chrome Web Store icon -->
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 0C8.21 0 4.831 1.757 2.632 4.501l3.953 6.848A6 6 0 0 1 12 6h9.542A12 12 0 0 0 12 0zm-8.625 6.07A11.96 11.96 0 0 0 0 12c0 6.041 4.468 11.04 10.25 11.879l3.953-6.847A6 6 0 0 1 6.13 14.1l-2.755-8.03zm12.378 1.93L11.8 14.848a6 6 0 0 1-2.915 2.871l-3.953 6.848A12 12 0 0 0 24 12c0-1.396-.239-2.736-.68-3.98l-7.567-.02zM12 9a3 3 0 1 0 0 6 3 3 0 0 0 0-6z"/>
+              </svg>
+              <span data-i18n="tabcandleCta">Add to Chrome — Free</span>
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
                 <line x1="7" y1="17" x2="17" y2="7"></line>
                 <polyline points="7 7 17 7 17 17"></polyline>
@@ -192,36 +228,43 @@
                   <line x1="2" y1="12" x2="22" y2="12"></line>
                   <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
                 </svg>
-                Web App
+                <span data-i18n="wordformationType">Web App</span>
               </span>
-              <span class="badge-users">GitHub Pages 公開中</span>
+              <span class="badge-users" data-i18n="wordformationStatus">Live on GitHub Pages</span>
             </div>
           </div>
 
           <div class="card-content">
             <h3 class="card-title">wordformation</h3>
-            <p class="card-subtext">登録した言葉たちから、新しい造語を紡ぎ出す</p>
-            <p class="card-desc">
-              思いついた単語を登録すると、ランダムに2つの言葉が組み合わさって新しい造語が誕生。ネーミングや創作、企画のアイデア出しにひらめきを与えるサービスです。
+            <p class="card-subtext" data-i18n="wordformationSubtext">Spark creative naming ideas through serendipitous word collisions</p>
+            <p class="card-desc" data-i18n="wordformationDesc">
+              Input words, spin the slots, and let concepts collide into unexpected neologisms and brand names. Designed for indie makers, writers, and curious creators seeking inspiration.
             </p>
+
+            <!-- Trust Pills -->
+            <div class="trust-pills">
+              <span class="trust-pill trust-pill-highlight" data-i18n="wordformationPill1">⚡ Instant Client-Side</span>
+              <span class="trust-pill" data-i18n="wordformationPill2">✨ No Signup Needed</span>
+              <span class="trust-pill" data-i18n="wordformationPill3">📋 Quick Copy</span>
+            </div>
 
             <ul class="feature-list">
               <li class="feature-item">
                 <span class="feature-icon">🎲</span>
-                <span>2つのスロット（A + B）で言葉をランダムにブレンド</span>
+                <span data-i18n="wordformationFeat1">Dual-slot random blending engine (Slot A + Slot B)</span>
               </li>
               <li class="feature-item">
                 <span class="feature-icon">📋</span>
-                <span>気になった造語はワンクリックで即座にクリップボードへ</span>
+                <span data-i18n="wordformationFeat2">One-click copy to clipboard for rapid ideation</span>
               </li>
               <li class="feature-item">
                 <span class="feature-icon">🏷️</span>
-                <span>登録した言葉を俯瞰できるインタラクティブなタグクラウド</span>
+                <span data-i18n="wordformationFeat3">Interactive word tag constellation for exploration</span>
               </li>
             </ul>
 
             <!-- Interactive Widget / Live Synthesis Preview -->
-            <div class="card-preview-box" id="formation-widget">
+            <div class="card-preview-box" id="formation-widget" title="Click to generate a new blend">
               <div class="formation-widget">
                 <span class="slot-token" id="slot-a-val">word</span>
                 <span class="slot-plus">+</span>
@@ -238,9 +281,9 @@
               class="cta-button cta-wordformation" 
               target="_blank" 
               rel="noopener noreferrer"
-              aria-label="wordformation Webアプリを開く"
+              aria-label="Launch wordformation web app"
             >
-              <span>Webアプリを開く</span>
+              <span data-i18n="wordformationCta">Launch Web App</span>
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
                 <line x1="7" y1="17" x2="17" y2="7"></line>
                 <polyline points="7 7 17 7 17 17"></polyline>
@@ -254,15 +297,14 @@
       <!-- Profile & Note Section -->
       <section class="about-section">
         <div class="about-text">
-          <h3>About teacola</h3>
-          <p>
-            使い勝手がよく、シンプルで余白のあるモノづくりを心がけています。<br>
-            日常のちょっとした不便の解消や、創作のインスピレーションになるWebプロダクトを開発しています。
+          <h3 data-i18n="aboutTitle">About teacola</h3>
+          <p data-i18n="aboutDesc">
+            Independent software maker focused on building clean, lightweight, and delightful digital tools. I believe in respectful software: zero tracking, minimal bloat, and thoughtful interactions.
           </p>
         </div>
         <div class="about-links">
           <a href="https://github.com/teacola" class="nav-link-btn" target="_blank" rel="noopener noreferrer">
-            <span>GitHub Profile</span>
+            <span data-i18n="aboutLink">GitHub Profile</span>
             <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
               <line x1="7" y1="17" x2="17" y2="7"></line>
               <polyline points="7 7 17 7 17 17"></polyline>
@@ -274,7 +316,7 @@
 
     <!-- Footer -->
     <footer class="site-footer">
-      <div class="footer-copy">
+      <div class="footer-copy" data-i18n="footerCopy">
         &copy; 2026 teacola. All rights reserved.
       </div>
       <div class="footer-nav">
