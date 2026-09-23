@@ -6,8 +6,8 @@
   --bg-card: #16181d;
   --bg-card-hover: #1c1f26;
   --bg-subtle: #20242c;
-  --border-color: rgba(255, 255, 255, 0.08);
-  --border-color-hover: rgba(255, 255, 255, 0.16);
+  --border-color: rgba(255, 255, 255, 0.16);
+  --border-color-hover: rgba(255, 255, 255, 0.32);
 
   --text-primary: #f0f2f5;
   --text-secondary: #9aa0a6;
@@ -31,8 +31,8 @@
   --bg-card: #ffffff;
   --bg-card-hover: #fcfcfc;
   --bg-subtle: #f2f3f5;
-  --border-color: rgba(0, 0, 0, 0.08);
-  --border-color-hover: rgba(0, 0, 0, 0.18);
+  --border-color: rgba(0, 0, 0, 0.16);
+  --border-color-hover: rgba(0, 0, 0, 0.32);
 
   --text-primary: #181a1f;
   --text-secondary: #5f6368;
