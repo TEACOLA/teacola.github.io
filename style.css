@@ -306,7 +306,15 @@ body {
   font-weight: 600;
 }
 
-/* Card Action Link */
+/* Card Action & URL */
+.card-action {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  align-items: flex-start;
+  margin-top: 4px;
+}
+
 .card-link {
   display: inline-flex;
   align-items: center;
@@ -328,9 +336,19 @@ body {
   color: var(--accent);
 }
 
-.card-link svg {
-  width: 14px;
-  height: 14px;
+.card-url {
+  font-size: 0.78rem;
+  font-family: var(--font-mono);
+  color: var(--text-muted);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  word-break: break-all;
+  line-height: 1.4;
+  transition: color var(--transition);
+}
+
+.card-url:hover {
+  color: var(--accent);
 }
 
 /* ==========================================================================
