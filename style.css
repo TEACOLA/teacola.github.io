@@ -91,21 +91,26 @@ body {
   align-items: center;
   border: 1px solid var(--border-color);
   border-radius: var(--radius-full);
-  padding: 2px;
+  padding: 4px;
+  gap: 3px;
   background: var(--bg-card);
 }
 
 .lang-btn {
   background: transparent;
   border: none;
-  padding: 3px 8px;
-  font-size: 0.75rem;
+  padding: 7px 16px;
+  font-size: 0.95rem;
   font-family: var(--font-mono);
-  font-weight: 600;
+  font-weight: 700;
   color: var(--text-muted);
   border-radius: var(--radius-full);
   cursor: pointer;
   transition: color var(--transition), background-color var(--transition);
+}
+
+.lang-btn:hover {
+  color: var(--text-primary);
 }
 
 .lang-btn.active {
