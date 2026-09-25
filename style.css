@@ -119,20 +119,21 @@ body {
   padding: 7px 16px;
   font-size: 0.95rem;
   font-family: var(--font-mono);
-  font-weight: 700;
-  color: var(--text-muted);
+  font-weight: 400;
+  color: var(--text-primary);
   border-radius: var(--radius-full);
   cursor: pointer;
-  transition: color var(--transition), background-color var(--transition);
+  text-decoration: none;
 }
 
 .lang-btn:hover {
-  color: var(--text-primary);
+  text-decoration: underline;
+  text-underline-offset: 3px;
 }
 
 .lang-btn.active {
   color: var(--text-primary);
-  background: var(--bg-subtle);
+  font-weight: 700;
 }
 
 /* ==========================================================================
