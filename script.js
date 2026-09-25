@@ -1,32 +1,4 @@
 // ==========================================================================
-// Theme Management
-// ==========================================================================
-const THEME_KEY = 'teacola_theme';
-const root = document.documentElement;
-const themeToggleBtn = document.getElementById('theme-toggle');
-
-function initTheme() {
-  const savedTheme = localStorage.getItem(THEME_KEY);
-  if (savedTheme) {
-    root.setAttribute('data-theme', savedTheme);
-  } else {
-    const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-    root.setAttribute('data-theme', prefersDark ? 'dark' : 'light');
-  }
-}
-
-function toggleTheme() {
-  const currentTheme = root.getAttribute('data-theme') || 'dark';
-  const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
-  root.setAttribute('data-theme', newTheme);
-  localStorage.setItem(THEME_KEY, newTheme);
-}
-
-if (themeToggleBtn) {
-  themeToggleBtn.addEventListener('click', toggleTheme);
-}
-
-// ==========================================================================
 // Language Management (EN / JA)
 // ==========================================================================
 const LANG_KEY = 'teacola_lang';
@@ -142,6 +114,5 @@ if (wordWidget) {
 // Init
 // ==========================================================================
 document.addEventListener('DOMContentLoaded', () => {
-  initTheme();
   initLanguage();
 });

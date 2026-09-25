@@ -1,32 +1,7 @@
 /* ==========================================================================
-   Design Tokens - Minimal & Humble
+   Design Tokens - Minimal & Humble (Light Theme)
    ========================================================================== */
 :root {
-  --bg-primary: #0f1115;
-  --bg-card: #16181d;
-  --bg-card-hover: #1c1f26;
-  --bg-subtle: #20242c;
-  --border-color: rgba(255, 255, 255, 0.16);
-  --border-color-hover: rgba(255, 255, 255, 0.32);
-
-  --text-primary: #f0f2f5;
-  --text-secondary: #9aa0a6;
-  --text-muted: #6e737d;
-
-  --accent: #58a6ff;
-
-  --font-sans: "Helvetica Neue", Helvetica, "Inter", -apple-system, BlinkMacSystemFont, Arial, "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Noto Sans JP", sans-serif;
-  --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
-
-  --radius-sm: 6px;
-  --radius-md: 10px;
-  --radius-lg: 14px;
-  --radius-full: 9999px;
-
-  --transition: 0.18s ease;
-}
-
-[data-theme="light"] {
   --bg-primary: #fafafa;
   --bg-card: #ffffff;
   --bg-card-hover: #fcfcfc;
@@ -39,6 +14,16 @@
   --text-muted: #8c9199;
 
   --accent: #0969da;
+
+  --font-sans: "Helvetica Neue", Helvetica, "Inter", -apple-system, BlinkMacSystemFont, Arial, "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Noto Sans JP", sans-serif;
+  --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 14px;
+  --radius-full: 9999px;
+
+  --transition: 0.18s ease;
 }
 
 /* ==========================================================================
@@ -127,35 +112,6 @@ body {
   color: var(--text-primary);
   background: var(--bg-subtle);
 }
-
-.theme-btn {
-  width: 32px;
-  height: 32px;
-  border-radius: var(--radius-full);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: var(--bg-card);
-  border: 1px solid var(--border-color);
-  color: var(--text-secondary);
-  cursor: pointer;
-  transition: color var(--transition), border-color var(--transition);
-}
-
-.theme-btn:hover {
-  color: var(--text-primary);
-  border-color: var(--border-color-hover);
-}
-
-.theme-btn svg {
-  width: 15px;
-  height: 15px;
-}
-
-.sun-icon { display: none; }
-.moon-icon { display: block; }
-[data-theme="light"] .sun-icon { display: block; }
-[data-theme="light"] .moon-icon { display: none; }
 
 /* ==========================================================================
    Intro
