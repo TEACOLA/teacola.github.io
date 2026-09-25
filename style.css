@@ -170,7 +170,8 @@ article,
 
 .footer-links a {
   color: var(--c-gray-muted);
-  text-decoration: none;
+  text-decoration: underline;
+  text-underline-offset: 3px;
   transition: color 0.15s ease;
 }
 
