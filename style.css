@@ -126,6 +126,7 @@ article,
 .badge {
   font-size: 0.75rem;
   font-family: var(--font-mono);
+  font-style: italic;
   color: var(--c-gray-muted);
 }
 
