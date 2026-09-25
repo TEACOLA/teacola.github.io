@@ -49,6 +49,8 @@ body {
   line-height: 1.65;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  margin-right: 0;
+  padding-right: 0;
   transition: background-color var(--transition), color var(--transition);
 }
 
@@ -59,7 +61,7 @@ body {
   width: 100%;
   max-width: 760px;
   margin: 0 auto;
-  padding: 0 24px;
+  padding: 0 0 0 24px;
 }
 
 /* ==========================================================================
