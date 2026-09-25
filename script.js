@@ -11,10 +11,8 @@ const translations = {
     projectsHeading: "Projects",
     tabcandleType: "Chrome Extension",
     tabcandleDesc: "Automatically closes unpinned tabs after 4 hours of inactivity. Designed like a quiet candle to keep your browser and memory light.",
-    tabcandleLink: "Chrome Web Store ↗",
     wordformationType: "Web App",
     wordformationDesc: "A lightweight tool that combines two words at random to spark neologisms and creative naming ideas.",
-    wordformationLink: "Open Web App ↗",
     footerCopy: "© 2026 teacola"
   },
   ja: {
@@ -24,10 +22,8 @@ const translations = {
     projectsHeading: "Projects",
     tabcandleType: "Chrome Extension",
     tabcandleDesc: "固定タブ以外の開きっぱなしタブを、4時間（240分）経過後に自動クローズするシンプルなChrome拡張機能です。タブを消えるロウソクに見立てて、メモリを節約します。",
-    tabcandleLink: "Chrome ウェブストア ↗",
     wordformationType: "Web App",
     wordformationDesc: "言葉を登録して、ランダムに組み合わさる2つの言葉から新しい造語をつくるシンプルなWebツールです。",
-    wordformationLink: "Webアプリを開く ↗",
     footerCopy: "© 2026 teacola"
   }
 };
