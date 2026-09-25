@@ -1,23 +1,24 @@
 /* ==========================================================================
-   Design Tokens - Palette: 白・黒・グレー・青・紫
+   Design Tokens - Web Safe Colors (白・黒・グレー・青・紫)
    ========================================================================== */
 :root {
-  /* 5 Theme Colors */
+  /* Strict Web Safe Colors (216 Palette: 00, 33, 66, 99, CC, FF) */
   --c-white: #ffffff;
-  --c-black: #111111;
-  --c-gray-subtle: #f4f5f7;
-  --c-gray-border: rgba(0, 0, 0, 0.14);
-  --c-gray-text: #59636e;
-  --c-gray-muted: #8c9199;
-  --c-blue: #0969da;
-  --c-purple: #7c3aed;
+  --c-black: #000000;
+  --c-gray-subtle: #ffffff;
+  --c-gray-border: #cccccc;
+  --c-gray-border-hover: #999999;
+  --c-gray-text: #666666;
+  --c-gray-muted: #999999;
+  --c-blue: #0066cc;
+  --c-purple: #6600cc;
 
   /* Semantics */
   --bg-primary: var(--c-white);
   --bg-card: var(--c-white);
   --bg-subtle: var(--c-gray-subtle);
   --border-color: var(--c-gray-border);
-  --border-color-hover: rgba(0, 0, 0, 0.28);
+  --border-color-hover: var(--c-gray-border-hover);
 
   --text-primary: var(--c-black);
   --text-secondary: var(--c-gray-text);
