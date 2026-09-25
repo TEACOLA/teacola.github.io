@@ -17,8 +17,6 @@ const translations = {
     wordformationDesc: "A lightweight tool that combines two words at random to spark neologisms and creative naming ideas.",
     wordformationWidgetHint: "Click to blend another",
     wordformationLink: "Open Web App ↗",
-    aboutHeading: "About",
-    aboutDesc: "Made by teacola. Building small, quiet tools and experiments. Find my code on <a href='https://github.com/teacola' target='_blank' rel='noopener noreferrer'>GitHub</a>.",
     footerCopy: "© 2026 teacola"
   },
   ja: {
@@ -34,8 +32,6 @@ const translations = {
     wordformationDesc: "言葉を登録して、ランダムに組み合わさる2つの言葉から新しい造語をつくるシンプルなWebツールです。",
     wordformationWidgetHint: "クリックで別の組み合わせ",
     wordformationLink: "Webアプリを開く ↗",
-    aboutHeading: "About",
-    aboutDesc: "teacola による個人プロジェクト。シンプルで使い心地のよい小品を作っています。<a href='https://github.com/teacola' target='_blank' rel='noopener noreferrer'>GitHub</a>",
     footerCopy: "© 2026 teacola"
   }
 };

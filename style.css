@@ -316,31 +316,6 @@ body {
 }
 
 /* ==========================================================================
-   About Section
-   ========================================================================== */
-.about {
-  padding: 24px 0;
-  border-top: 1px solid var(--border-color);
-  margin-bottom: 40px;
-}
-
-.about-text {
-  font-size: 0.9rem;
-  color: var(--text-secondary);
-  line-height: 1.65;
-}
-
-.about-text a {
-  color: var(--text-primary);
-  text-decoration: underline;
-  text-underline-offset: 3px;
-}
-
-.about-text a:hover {
-  color: var(--accent);
-}
-
-/* ==========================================================================
    Footer
    ========================================================================== */
 .site-footer {
