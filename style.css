@@ -40,7 +40,7 @@ body {
 .container {
   max-width: 680px;
   margin: 0;
-  padding: 36px 24px 56px;
+  padding: 36px 24px 0;
 }
 
 /* ==========================================================================
@@ -165,6 +165,7 @@ article,
   font-size: 0.8rem;
   color: var(--c-gray-muted);
   font-family: var(--font-mono);
+  padding-bottom: 2em;
 }
 
 .footer-links {
@@ -185,7 +186,7 @@ article,
 
 @media (max-width: 600px) {
   .container {
-    padding: 24px 16px 40px;
+    padding: 24px 16px 0;
   }
 
   .site-footer {
