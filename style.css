@@ -24,6 +24,10 @@
   padding: 0;
 }
 
+html {
+  font-size: 110%;
+}
+
 body {
   font-family: var(--font-sans);
   background-color: var(--c-white);
