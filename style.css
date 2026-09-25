@@ -242,39 +242,6 @@ body {
   line-height: 1.6;
 }
 
-/* Mini Preview Box */
-.mini-preview {
-  background: transparent;
-  border: none;
-  padding: 0;
-  display: flex;
-  align-items: center;
-  font-size: 0.82rem;
-  font-family: var(--font-mono);
-  color: var(--text-secondary);
-}
-
-.mini-preview-candle {
-  gap: 8px;
-}
-
-.mini-preview-words {
-  justify-content: flex-start;
-  gap: 8px;
-  cursor: pointer;
-  user-select: none;
-}
-
-.word-token {
-  color: var(--text-primary);
-  font-weight: 600;
-}
-
-.word-result {
-  color: var(--accent-purple);
-  font-weight: 600;
-}
-
 /* Card Action & URL */
 .card-action {
   display: flex;
