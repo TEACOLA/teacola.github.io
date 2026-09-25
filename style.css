@@ -255,31 +255,23 @@ body {
   margin-top: 4px;
 }
 
-.card-link {
-  display: inline-flex;
-  align-items: center;
-  gap: 4px;
-  font-size: 0.9rem;
-  font-weight: 700;
-  text-decoration: none;
-  align-self: flex-start;
-  padding: 0;
-  border: none;
-  background: transparent;
+.card-action a:not(.card-url) {
+  font-size: 0.92rem;
+  text-decoration: underline;
+  text-underline-offset: 3px;
   transition: opacity var(--transition);
 }
 
-.card-link:hover {
-  opacity: 0.8;
-  text-decoration: underline;
-}
-
-.link-blue {
+.card-action a:not(.card-url):link {
   color: var(--accent-blue);
 }
 
-.link-purple {
+.card-action a:not(.card-url):visited {
   color: var(--accent-purple);
+}
+
+.card-action a:not(.card-url):hover {
+  opacity: 0.8;
 }
 
 .icon-purple {
@@ -298,12 +290,8 @@ body {
   transition: color var(--transition);
 }
 
-.url-blue:hover {
-  color: var(--accent-blue);
-}
-
-.url-purple:hover {
-  color: var(--accent-purple);
+.card-url:hover {
+  color: var(--text-primary);
 }
 
 /* ==========================================================================
