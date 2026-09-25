@@ -9,6 +9,7 @@
   --c-gray-border: #cccccc;
   --c-blue: #0066cc;
   --c-purple: #6600cc;
+  --c-green-dark: #006600;
 
   --font-sans: "Helvetica Neue", Helvetica, "Inter", -apple-system, BlinkMacSystemFont, Arial, "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Noto Sans JP", sans-serif;
   --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
@@ -29,6 +30,7 @@ body {
   color: var(--c-black);
   line-height: 1.6;
   -webkit-font-smoothing: antialiased;
+  border-top: 3px solid var(--c-green-dark);
 }
 
 .container {
