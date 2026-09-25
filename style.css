@@ -29,14 +29,12 @@ body {
   color: var(--c-black);
   line-height: 1.6;
   -webkit-font-smoothing: antialiased;
-  margin: 0;
-  padding: 0;
 }
 
 .container {
-  max-width: 760px;
+  max-width: 680px;
   margin: 0;
-  padding: 0;
+  padding: 36px 24px 56px;
 }
 
 /* ==========================================================================
@@ -46,7 +44,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 16px 0;
+  margin-bottom: 32px;
 }
 
 .brand {
@@ -54,6 +52,7 @@ body {
   font-weight: 700;
   color: var(--c-black);
   text-decoration: none;
+  letter-spacing: -0.01em;
 }
 
 .lang-switch {
@@ -86,15 +85,13 @@ body {
    Intro
    ========================================================================== */
 .hero {
-  padding: 12px 0 24px;
-  border-bottom: 1px solid var(--c-gray-border);
-  margin-bottom: 24px;
+  margin-bottom: 40px;
 }
 
 .hero-desc {
   font-size: 0.95rem;
   color: var(--c-gray-text);
-  line-height: 1.6;
+  line-height: 1.65;
 }
 
 /* ==========================================================================
@@ -103,14 +100,15 @@ body {
 .projects-list {
   display: flex;
   flex-direction: column;
-  margin-bottom: 32px;
+  gap: 28px;
+  margin-bottom: 48px;
 }
 
 article,
 .project-card {
-  border-left: 1em solid var(--c-gray-border);
-  padding: 2px 0 2px 1em;
-  margin: 0 0 1em 0;
+  border: none;
+  border-left: 2px solid var(--c-gray-border);
+  padding: 2px 0 2px 14px;
   display: flex;
   flex-direction: column;
   gap: 8px;
@@ -126,7 +124,7 @@ article,
 .card-title-group {
   display: flex;
   align-items: center;
-  gap: 8px;
+  gap: 10px;
 }
 
 .project-icon,
@@ -171,7 +169,7 @@ article,
 }
 
 .card-url {
-  font-size: 0.85rem;
+  font-size: 0.82rem;
   font-family: var(--font-mono);
   text-decoration: underline;
   text-underline-offset: 3px;
@@ -196,8 +194,6 @@ article,
    Footer
    ========================================================================== */
 .site-footer {
-  padding: 24px 0;
-  border-top: 1px solid var(--c-gray-border);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -222,6 +218,10 @@ article,
 }
 
 @media (max-width: 600px) {
+  .container {
+    padding: 24px 16px 40px;
+  }
+
   .site-footer {
     flex-direction: column;
     align-items: flex-start;
