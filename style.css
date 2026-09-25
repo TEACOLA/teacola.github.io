@@ -78,7 +78,7 @@ body {
 article,
 .project-card {
   border: none;
-  border-left: 2px solid var(--c-gray-border);
+  border-left: 3px solid var(--c-gray-border);
   padding: 2px 0 2px 14px;
   display: flex;
   flex-direction: column;
