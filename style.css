@@ -1,19 +1,30 @@
 /* ==========================================================================
-   Design Tokens - Minimal & Humble (Light Theme)
+   Design Tokens - Palette: 白・黒・グレー・青・紫
    ========================================================================== */
 :root {
-  --bg-primary: #fafafa;
-  --bg-card: #ffffff;
-  --bg-card-hover: #fcfcfc;
-  --bg-subtle: #f2f3f5;
-  --border-color: rgba(0, 0, 0, 0.16);
-  --border-color-hover: rgba(0, 0, 0, 0.32);
+  /* 5 Theme Colors */
+  --c-white: #ffffff;
+  --c-black: #111111;
+  --c-gray-subtle: #f4f5f7;
+  --c-gray-border: rgba(0, 0, 0, 0.14);
+  --c-gray-text: #59636e;
+  --c-gray-muted: #8c9199;
+  --c-blue: #0969da;
+  --c-purple: #7c3aed;
 
-  --text-primary: #181a1f;
-  --text-secondary: #5f6368;
-  --text-muted: #8c9199;
+  /* Semantics */
+  --bg-primary: var(--c-white);
+  --bg-card: var(--c-white);
+  --bg-subtle: var(--c-gray-subtle);
+  --border-color: var(--c-gray-border);
+  --border-color-hover: rgba(0, 0, 0, 0.28);
 
-  --accent: #0969da;
+  --text-primary: var(--c-black);
+  --text-secondary: var(--c-gray-text);
+  --text-muted: var(--c-gray-muted);
+
+  --accent-blue: var(--c-blue);
+  --accent-purple: var(--c-purple);
 
   --font-sans: "Helvetica Neue", Helvetica, "Inter", -apple-system, BlinkMacSystemFont, Arial, "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Noto Sans JP", sans-serif;
   --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
@@ -259,7 +270,7 @@ body {
 }
 
 .word-result {
-  color: var(--accent);
+  color: var(--accent-purple);
   font-weight: 600;
 }
 
@@ -278,7 +289,6 @@ body {
   gap: 4px;
   font-size: 0.9rem;
   font-weight: 700;
-  color: var(--accent);
   text-decoration: none;
   align-self: flex-start;
   padding: 0;
@@ -288,8 +298,20 @@ body {
 }
 
 .card-link:hover {
-  opacity: 0.75;
+  opacity: 0.8;
   text-decoration: underline;
+}
+
+.link-blue {
+  color: var(--accent-blue);
+}
+
+.link-purple {
+  color: var(--accent-purple);
+}
+
+.icon-purple {
+  color: var(--accent-purple);
 }
 
 .card-url {
@@ -304,8 +326,12 @@ body {
   transition: color var(--transition);
 }
 
-.card-url:hover {
-  color: var(--accent);
+.url-blue:hover {
+  color: var(--accent-blue);
+}
+
+.url-purple:hover {
+  color: var(--accent-purple);
 }
 
 /* ==========================================================================
