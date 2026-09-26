@@ -34,7 +34,7 @@ body {
   color: var(--c-black);
   line-height: 1.6;
   -webkit-font-smoothing: antialiased;
-  border-top: 6px solid var(--c-green-dark);
+  border-top: 8px solid var(--c-green-dark);
 }
 
 .container {
@@ -71,7 +71,7 @@ body {
 article,
 .project-card {
   border: none;
-  border-left: 3px solid var(--c-gray-border);
+  border-left: 2px solid var(--c-gray-border);
   padding: 2px 0 2px 14px;
   display: flex;
   flex-direction: column;
