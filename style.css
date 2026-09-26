@@ -34,7 +34,7 @@ body {
   color: var(--c-black);
   line-height: 1.6;
   -webkit-font-smoothing: antialiased;
-  border-top: 3px solid var(--c-green-dark);
+  border-top: 6px solid var(--c-green-dark);
 }
 
 .container {
