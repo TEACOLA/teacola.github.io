@@ -133,6 +133,18 @@ article,
   margin-top: 2px;
 }
 
+.card-links {
+  padding-left: 1.25em;
+}
+
+.card-links li {
+  margin-bottom: 4px;
+}
+
+.card-links li:last-child {
+  margin-bottom: 0;
+}
+
 .card-url {
   font-size: 0.82rem;
   font-family: var(--font-mono);
@@ -159,39 +171,14 @@ article,
    Footer
    ========================================================================== */
 .site-footer {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   font-size: 0.8rem;
   color: var(--c-gray-muted);
   font-family: var(--font-mono);
   padding-bottom: 8em;
 }
 
-.footer-links {
-  display: flex;
-  gap: 16px;
-}
-
-.footer-links a {
-  color: var(--c-gray-muted);
-  text-decoration: underline;
-  text-underline-offset: 3px;
-  transition: color 0.15s ease;
-}
-
-.footer-links a:hover {
-  color: var(--c-black);
-}
-
 @media (max-width: 600px) {
   .container {
     padding: 24px 16px 0;
-  }
-
-  .site-footer {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 12px;
   }
 }
