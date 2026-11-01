@@ -107,6 +107,8 @@ article,
   align-items: center;
   justify-content: center;
   color: var(--c-gray-text);
+  font-size: 1.15rem;
+  line-height: 1;
 }
 
 .project-name {
